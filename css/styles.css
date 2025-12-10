@@ -50,8 +50,7 @@ a {
 }
 
 .header-logo{
-  display:flex;
-  gap:24px;
+  height:24px;
 }
 
 .header ul{
@@ -75,18 +74,60 @@ a {
 /*-------------------------------------------
   セクション 共通部分
   -------------------------------------------*/
-
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap:40px;
+}
 
 /* -------------------------------------------
   プロフィール
   -------------------------------------------*/
+.profile{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
 
+.profile-image{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.profile-info{
+  display:flex;
+  flex-direction:colimn;
+  gap:16px;
+}
 
 /* -------------------------------------------
   記事
   -------------------------------------------*/
+.articles{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:40px 16px;
+}
 
+.article{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
 
+.article-image{
+  width:100%;
+  height: 200px;
+  object-fit:cover;
+}
 /*-------------------------------------------
   フッター
   -------------------------------------------*/
+.footer{
+  font-size:small;
+  padding:40px 0;
+  text-align:center;
+}
