@@ -80,6 +80,9 @@ a {
   align-items:center;
   gap:40px;
 }
+.section-title{
+  border-bottom:solid 1px #383e45;
+}
 
 /* -------------------------------------------
   プロフィール
